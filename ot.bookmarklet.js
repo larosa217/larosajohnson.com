@@ -1020,7 +1020,7 @@ bible.Reference = function () {
 				return {
 					refText: refText,
 					toShortUrl: function() {
-						return 'http://bib.ly/' + refText.replace(/\s/ig,'').replace(/:/ig,'.').replace(/–/ig,'-');
+						return 'http://bib.ly/' + refText.replace(/\s/ig,'.').replace(/:/ig,'.').replace(/–/ig,'-');
 					},
 					toString: function() {
 						return refText  + " = Can't parse it";
