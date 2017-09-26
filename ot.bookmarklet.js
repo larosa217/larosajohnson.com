@@ -547,7 +547,7 @@ bible.Reference = function () {
 
 		toShortUrl: function () {
 			if (this.bookIndex < 0 || this.bookIndex >= bible.Books.length) return "invalid";
-			return 'olivetree://bible/' + bible.Books[this.bookIndex].names[1] + this.chapterAndVerse('.','-','-');
+			return 'olivetree://bible/' + bible.Books[this.bookIndex].names[1] + '.' + this.chapterAndVerse('.','-','-');
 		}
 	}
 };
