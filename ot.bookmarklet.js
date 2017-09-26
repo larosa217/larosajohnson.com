@@ -638,7 +638,8 @@ bible.Reference = function () {
 	/* handler for when a verse node is found */
 	var
 		createBiblyLinks = function(newNode, reference) {
-				newNode.setAttribute('href', reference.toShortUrl() + (bibly.linkVersion != '' ? '.' + bibly.linkVersion : ''));
+				newNode.setAttribute('href', '#');
+				newNode.setAttribute('onClick', 'window.open\(\'' + reference.toShortUrl() + (bibly.linkVersion != '' ? '.' + bibly.linkVersion : '') + '\', \'_blank\'\)');
 				newNode.setAttribute('title', 'Read ' + reference.toString());
 				newNode.setAttribute('rel', reference.toString());
 				newNode.setAttribute('class', bibly.className);
